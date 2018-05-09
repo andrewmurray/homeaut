@@ -1,5 +1,7 @@
 const pkg = require('./package')
 
+require('dotenv').config()
+
 module.exports = {
   mode: 'universal',
 
@@ -42,7 +44,9 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Axios module configuration
